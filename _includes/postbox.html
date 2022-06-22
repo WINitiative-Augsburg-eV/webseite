@@ -5,6 +5,7 @@
     <div class="card-block">
         <h2 class="card-title h4">{{ post.title }}</h2>
         <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
+        {% if post.link %}<center><a href="{{post.link}}" class="btn btn-dark text-white px-4 btn-lg">Anmelden &#x1F5F3</a></center>{% endif %}
         <div class="metafooter">
             <div class="wrapfooter small d-flex align-items-center">
                 <div class="clearfix"></div>

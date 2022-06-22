@@ -226,6 +226,11 @@ small, .small {
   }
 }
 
+.btn.btn-dark.text-white.px-4.btn-lg{
+  font-size: 13pt;
+  
+}
+
 @media only screen and (max-width: 360px) {
   .mobile-dash-2 {
       display: none;
