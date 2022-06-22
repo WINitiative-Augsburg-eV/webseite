@@ -1,0 +1,57 @@
+title: "Winitiative e.V."
+email: f.duerrwanger@gmail.com
+timezone: UTC
+baseurl: "/webseite"
+permalink: "/:title/"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/4ad55223-b284-4398-8205-c4bac155f6f9.jpg'
+author: Sal
+paginate: 30
+disqus: 'demowebsite'
+locale: de
+lang: de
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+
+# Authors
+authors:
+  bjarne:
+    name: Bjarne
+    display_name: Bjarne
+    avatar: 'assets/images/sal.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John
+    avatar: 'assets/images/john.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+
+# Social
+social:
+  instagram: https://www.instagram.com/winitiative/?hl=de
+  facebook: https://chat.whatsapp.com/LBGoeEN4y088OHvIfs3IWt
+  discord: https://discord.gg/8YSHVDHjBN
+
+
+# Plugins
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives

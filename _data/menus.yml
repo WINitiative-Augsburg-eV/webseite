@@ -1,0 +1,31 @@
+# Top Menu
+topmenu:
+
+- title: Startseite
+  url: ""
+
+- title: Über Uns
+  url: "ueber-uns/"
+
+- title: Mitglied werden
+  url: "mitglied-werden/"
+
+- title: Kontakt
+  url: "kontakt/"
+
+
+
+# Footer Menu
+footermenu:
+
+- title: Startseite
+  url: ""
+
+- title: Datenschutzerklärung
+  url: "datenschutzerklaerung/"
+
+- title: Impressum
+  url: "impressum/"
+
+- title: Mitglied werden
+  url: "mitglied-werden/"

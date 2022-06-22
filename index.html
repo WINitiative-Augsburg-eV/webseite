@@ -1,0 +1,63 @@
+---
+title: Startseite
+layout: default
+background: '/img/bg-index.jpg'
+---
+
+<!-- Home Intro
+================================================== -->
+{% if page.url == "/" %}
+
+<div class="rounded mb-5 hero">
+  <div class="row align-items-center justify-content-between">
+      <h1 class="font-weight-bold mb-4" style="color: black"><center>Willkommen auf der Website der Winitiative Augsburg</center></h1>
+      <p class="lead mb-4" style="color: white"">Für den aktiven Austausch veranstaltet die WINitiative diverse Events, wie Stammtische, Exkursionen, Lerngruppen und mehr. Dabei tritt man in einem lockeren und entspannten Rahmen miteinander in Kontakt.</p>
+      <p class="lead mb-4" style="color: white"">Als Mitglied der WINitiative kannst du dich bei der Planung und Organisation unserer Events engagieren. Dabei kommst du mit WIN-Studierenden aus verschiedenen Semestern in Kontakt und kannst ganz nebenbei etwas für deinen Lebenslauf tun (bspw. bei einer Stipendiumsbewerbung kann so eine Bescheinigung über soziales Engagement sehr helfen).</p>
+      <p class="lead mb-4" style="color: white"">Wenn du Wirtschaftsinformatik in Augsburg studierst, gibt es also keinen Grund der WINitiative nicht beizutreten!</p>
+      </div>
+      <center><img src="{{ site.baseurl }}/assets/images/giphy.gif" width="100"></center>
+      <center><a href="{{site.baseurl}}/mitglied-werden" class="btn btn-dark text-white px-5 btn-lg">Mitglied werden</a></center>
+    </div>
+  </div>
+
+{% endif %}
+
+
+<!-- Featured
+================================================== -->
+<section class="row">
+  {% for post in site.posts %}
+      {% if post.featured == true %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html %}
+          </div>
+      {% endif %}
+  {% endfor %}
+
+</section>
+
+<!-- Posts List with Sidebar (except featured)
+================================================== -->
+  <h2 class="font-weight-bold mb-4">Unsere Events</h2>
+<section class="row">
+  <div class="col-sm-8">
+    <div class="row">
+      {% for post in paginator.posts %}
+      {% unless post.featured == true %}
+      <div class="col-md-6 mb-5">
+        {% include postbox.html %}
+      </div>
+      {% endunless %}
+      {% endfor %}
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
+</section>
