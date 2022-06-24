@@ -2,8 +2,8 @@
 layout: default
 ---
 <!-- Post Featured Image -->
-
-<div class="animate__animated animate__slideInRight animate__delay-0.3s">
+<div class="pagebody">
+<div class="animate__animated animate__backInUp">
 {% if page.image %}
 <div class="text-center mx-auto mb-5">
   <img class="featured-image text-center mx-auto rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
@@ -26,5 +26,6 @@ layout: default
       {% include disqus.html %}
   </div>
   {% endif %}
+</div>
 </div>
 </div>
