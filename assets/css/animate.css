@@ -12,6 +12,7 @@
 }
 .pagebody{
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .animate__animated {
   -webkit-animation-duration: 1s;
