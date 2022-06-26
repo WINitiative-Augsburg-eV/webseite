@@ -14,6 +14,22 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+/*icons hover animation*/
+.animate__iconshake:hover {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+.animate__iconshake{
+}
+
+.animate__menubutton:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+.animate__menubutton{
+
+}
+
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -642,6 +658,7 @@
   -webkit-animation-name: tada;
   animation-name: tada;
 }
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes wobble {
   from {
