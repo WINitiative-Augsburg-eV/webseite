@@ -167,6 +167,14 @@ small, .small {
    .mobile-dash-2 {
     display: none;
   }
+  .liste2{
+    display: none;
+  }
+}
+@media only screen and (min-width: 565px) {
+  .mobile-break{
+  display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -181,6 +189,9 @@ small, .small {
   }
   .d-flex.align-items-center{
     margin-left: 0 !important;
+  }
+  .liste1 {
+    display: none;
   }
 }
 
