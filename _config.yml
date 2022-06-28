@@ -1,6 +1,6 @@
-title: "Winitiative e.V."
-email: f.duerrwanger@gmail.com
-timezone: UTC
+title: "Winitiative Augsburg e.V."
+email: fritz.duerrwanger@winitiative-augsburg.de
+timezone: UTC+2
 baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
