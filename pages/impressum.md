@@ -7,16 +7,16 @@ comments: false
 
 
 Winitiative e.V.  
-?  
-? ?   
-fritz.duerrwanger@winitiative-augsburg.de
+Gustav-Heinemann-Straße 9 1/4
+86199 Augsburg   
+leonhard.weng@winitiative-augsburg.de
 
 Registereintrag: Eingetragen im Vereinsregister  
 Registergericht: Amtsgericht Augsburg  
 Registernummer: 201972  
 
 Vertreten durch:  
-Fritz Dürrwanger (2. Vorstand)
+Leonhard Weng (1. Vorstand)
 
 
 
