@@ -1,14 +1,11 @@
 ---
 layout: page
 title: Alumni Bereich
-permalink: "/alumni-bereich/"
+permalink: "/alumni/"
 comments: false
 ---
-<span>Willkommen im Alumni Bereich. Hier findest du den Antrag um der nach deiner Aktiven Zeit, der Winitiative als Almuni erhalten zu bleiben. Entweder per Kontaktformular oder indem du das ausgefüllte PDF per E-Mail absendest.</span>
 <head>
-
  <meta charset=“UTF-8”>
-
    <style>
    .column{
    float: left;
@@ -16,49 +13,66 @@ comments: false
    padding: 15px;
 
    }
-
-
    @media screen and (max-width: 600px) {
      .column {width: 100%}
    }
    </style>
 </head>
 
-<div class="row">
-      <div class="column">
+<center><p>Herzlich Wilkommen im Alumni Bereich der WINitiative!</p></center>
+<p>Hier hast du die Möglichkeit als Alumni wieder der WINitiative beizutreten. Das bedeutet für dich:</p>
+  <ol style="font-size: 14pt; font-weight: bold" class="liste1">
+          <li>Du wirst Teil unseres Alumni-Netzwerks und kannst damit beim Alumni-Treffen, oder unseren anderen Veranstaltungen dabei sein.</li>
+          <br>
+          <li>Wir kommen eventuell auf dich zu, wenn wir beispielsweise einen Kaminabend organisieren.</li>
+          <br>
+          <li>In der Alumni WhatsApp-Gruppe kannst du dich mit anderen Ehemaligen vernetzen.</li>
+          <br>
+          <li>Der Newsletter informiert dich, falls es relevante Neuigkeiten gibt. (Bspw. Ein Alumni Treffen)</li>
+          <br>
+          <li>Mit dem Alumni-Antrag wirst du zum außerordentlichen Mitglied der WINitiative. Das heißt, du hast keine Stimme bei der Vorstandswahl und bist bei der allgemeinen Organisation nicht eingebunden.</li>
+  </ol>
+  <div class="liste2">
+    <p style="font-weight: bold; font size: 14pt">
+    1. Du wirst Teil unseres Alumni-Netzwerks und kannst damit beim Alumni-Treffen, oder unseren anderen Veranstaltungen dabei sein.
+    <br><br>
+    2. Wir kommen eventuell auf dich zu, wenn wir beispielsweise einen Kaminabend organisieren.
+    <br><br>
+    3. In der Alumni WhatsApp-Gruppe kannst du dich mit anderen Ehemaligen vernetzen.
+    <br><br>
+    4. Der Newsletter informiert dich, falls es relevante Neuigkeiten gibt. (Bspw. Ein Alumni Treffen)
+    <br><br>
+    5. Mit dem Alumni-Antrag wirst du zum außerordentlichen Mitglied der WINitiative. Das heißt, du hast keine Stimme bei der Vorstandswahl und bist bei der allgemeinen Organisation nicht eingebunden.
+  </p>
+  </div>
+  <br>
+  <p>Fülle dieses Formular aus und wir schicken dir den Antrag als vorausgefülltes PDF zu.</p>
+      <div>
         <form action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
-          <input type="hidden" name="_next" value="https://winitiative-augsburg-ev.github.io/webseite/danke">
-          <input type="hidden" name="_subject" value="Neuer Mitgliedsantrag!">
+          <input type="hidden" name="_next" value="https://winitiative-augsburg.de/danke">
+          <input type="hidden" name="_subject" value="Neuer Alumni-Antrag!">
           <input type="hidden" name="_captcha" value="false">
-        <center><h3 style="margin-top: 10px;" class="mb-4">Einfach das Formular ausfüllen und beim nächsten Treffen der Winitiative den Antrag unterschreiben</h3></center>
         <div class="form-group row">
-        <div class="col-md-6">
-        <input class="form-control" type="text" name="Nachname" placeholder="Nachname*" required>
+        <div class="col-md-12">
+          <legend style="font-size: 14pt; margin-bottom: -3px;">Ich möchte:</legend>
+          <input type="checkbox" id="pp" name="Newsletter?" value="Newsletter erhalten">
+          <label for="pp" style="font-size: 13pt">Den Newsletter erhalten</label>
+          <br class="mobile-break">
+          <input type="checkbox" id="br" name="Whatsapp" value="Whatsapp erhalten">
+          <label for="br" style="font-size: 13pt">Die WhatsApp Einladung erhalten</label>
         </div>
         <div class="col-md-6">
-        <input class="form-control" type="text" name="Vorname" placeholder="Vorname*" required>
+        <input class="form-control" type="text" name="vorname" placeholder="Vorname*" required>
+        <input class="form-control" type="text" name="nachname" placeholder="Name*" required>
+        </div>
+        <div class="col-md-6">
+        <input class="form-control" type="email" name="email" placeholder="E-Mail Addresse*" required>
+        <input class="form-control" type="text" name="Jahrgang" placeholder="Jahrgang">
+        </div>
+        <br>
       </div>
-      </div>
-      <div class="form-group row">
-      <div class="col-md-6">
-      <input class="form-control" type="email" name="email" placeholder="E-mail Addresse*" required>
-      </div>
-      <div class="col-md-6">
-      <input class="form-control" type="text" name="Handynummer" placeholder="Handynummer*" required>
-      </div>
-      <div class="col-md-6">
-      <span style="font-size: 17px">Immatrikuliert seit:</span>
-      <input class="form-control" type="text" name="Immatrikulation" placeholder="MM/JJJJ*" required>
-      </div>
-      </div><center><input class="btn btn-dark" type="submit" value="Senden"></center>
+      <input type="checkbox" id="pp" name="Datenschutzbedingungen" value="DSGVO" required>
+      <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
+      <center><input class="btn btn-dark" type="submit" value="Senden"></center>
       </form>
     </div>
-    <div class="column">
-      <center><h3 style="margin-top: 10px">Antrag als PDF Herunterladen und ausgefüllt per E-Mail abschicken</h3></center>
-      <br>
-      <center><a href="{{site.baseurl}}/downloads/Mitgliedsantrag_WINitiative_e.V.pdf" target="_blank"><img src="{{site.baseurl}}/assets/images/PDF.jpg" alt="{{site.baseurl}}/assets/images/PDF.jpg" width="180px"></a></center>
-      <br>
-      <center><button class="btn btn-dark" onclick="location.href='mailto:fritz.duerrwanger@winitiative-augsburg.de?subject=Mitgliedsantrag';">Abschicken &#x1F4EE</button></center>
-    </div>
-
-</div>
