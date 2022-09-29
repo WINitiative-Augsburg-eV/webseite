@@ -1,16 +1,14 @@
 <!-- begin post -->
-{% assign author = site.authors[post.author] %}
-<div class="card">
-        {% if post.image %} <img class="rounded mb-4" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
-    <div class="card-block">
-        <h2 class="card-title h4">{{ post.title }}</h2>
-        <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:40 }}</p>
-        {% if post.link %}<center><a href="{{post.link}}" class="btn btn-dark text-white px-4 btn-lg">{{ post.link-text }}</a></center>{% endif %}
-        <div class="metafooter">
-            <div class="wrapfooter small d-flex align-items-center">
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+<li class="cardy" id="{{ post.card }}">
+			<div class="card__content">
+        {% if post.image %} <img  src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+        <div>
+					<center><h2 class="card-title h4">{{ post.title }}</h2></center>
+					<p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:40 }}</p>
+					{% if post.link %}<center><p><a href="{{post.link}}" class="btn btn-dark text-white px-4 btn-lg">{{ post.link-text }}</a></p></center>{% endif %}
+				</div>
+
+		</li>
 <!-- end post -->
