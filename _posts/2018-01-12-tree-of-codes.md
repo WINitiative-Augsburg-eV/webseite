@@ -4,6 +4,5 @@ title: "BierPong Turnier 2022"
 author: bjarne;
 categories: [ Events, Uni ]
 image: assets/images/Bier_Pong_Becher_Aufstellung.jpg.webp
-card: card_3
 ---
 The WINner takes it all. Wenn du beim nächsten Mal dabei sein willst, folgst du uns am besten auf Instagram oder trittst der WhatsApp-Gruppe bei.
