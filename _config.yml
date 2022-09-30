@@ -2,7 +2,7 @@ title: "WINitiative Augsburg e.V."
 description: "Willkommen auf der Website der WINitiative Augsburg! Hier kannst du deinen Mitgliedsantrag stellen und dich zu unseren Events anmelden."
 email: fritz.duerrwanger@winitiative-augsburg.de
 timezone: UTC+2
-baseurl: "/WINitiative-Test/"
+baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/4ad55223-b284-4398-8205-c4bac155f6f9.jpg'
