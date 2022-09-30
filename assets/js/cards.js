@@ -1,5 +1,5 @@
 
-import { scroll, animate } from "https://cdn.skypack.dev/motion@10.13.1"
+import { scroll, animate } from "https://cdn.skypack.dev/motion"
 
 const $cardsWrapper = document.querySelector('#cards');
 const $cards = document.querySelectorAll('.cardy');
