@@ -1,4 +1,5 @@
 ---
+title: Startseite
 layout: default
 background: '/img/bg-index.jpg'
 ---
@@ -26,30 +27,36 @@ background: '/img/bg-index.jpg'
 
 <!-- Featured
 ================================================== -->
-<section class="row">
+
+<section>
   {% for post in site.posts %}
       {% if post.featured == true %}
-          <div class="col-md-4 mb-5">
+          <div class="wow animate__animated animate__fadeInUp">
           {% include postbox.html %}
           </div>
+          <br>
+          <br>
       {% endif %}
   {% endfor %}
 
 </section>
+
+<section>
+<div class="cardshead">
+<h2 id="cards-head" class="font-weight-bold mb-4">Unsere letzten Events</h2>
+</div>
+  <ul id="cards">
+    {% for post in paginator.posts %}
+    {% unless post.featured == true %}
+          {% include postbox.html %}
+  {% endunless %}
+  {% endfor %}
+</ul>
+</section>
+
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
-  <h2 class="font-weight-bold mb-4">Unsere Events</h2>
-<section class="row">
-  <div class="col-sm-12">
-    <div class="row">
-      {% for post in paginator.posts %}
-      {% unless post.featured == true %}
-      <div class="col-md-6 mb-5">
-        {% include postbox.html %}
-      </div>
-      {% endunless %}
-      {% endfor %}
-    </div>
+
     <!-- Pagination -->
     <div class="bottompagination">
       <span class="navigation" role="navigation">
