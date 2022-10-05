@@ -44,6 +44,7 @@ Just customize your theme here.
   }
   .card__content > div {
     padding: 1rem 1rem;
+		place-self: center;
   	width: 100%;
   	text-align: left;
 			box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
