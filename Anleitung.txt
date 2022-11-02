@@ -4,3 +4,7 @@ Für Anmeldebuttons auf der Hauptseite:
 Im Post im Header Bereich das hier Einfügen:
 link: Link zur Anmeldung
 link-text: Button Text
+
+(Bsp: link: /event-anmeldung/
+link-text: Zur Anmeldung &#x1F37B
+featured: true)

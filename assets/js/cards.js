@@ -19,8 +19,8 @@ $cards.forEach(($card, index0) => {
 	scroll(
 		animate($card, {
 			// Earlier cards shrink more than later cards
-			scale: [ 1, 1 - (0.1 * reverseIndex0)],
-			opacity: [ 1, 1 - (0.1 * reverseIndex0)],
+			scale: [ 1, 1 - (0.05 * reverseIndex0)],
+			opacity: [ 1, 1 - (0.01 * reverseIndex0)],
 		}), {
 			// Each card should only shrink when it’s at the top.
 			// We can’t use exit on the els for this (as they are sticky)
