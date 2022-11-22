@@ -35,8 +35,8 @@ comments: false
         <form action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
           <input type="hidden" name="_subject" value="Neuer Mitgliedsantrag!">
           <input type="hidden" name="_captcha" value="false">
-        <div class="form-group row">
-        <div class="col-md-12">
+        <div class="form-row">
+        <div class="form-group col-md-12">
           <legend style="font-size: 14pt; margin-bottom: -3px;">Ich möchte meinen Antrag:</legend>
           <input type="radio" id="pp" name="zahlung" value="an-mich-senden" required>
           <label for="pp" style="font-size: 13pt">Selbst unterschreiben</label>
@@ -44,18 +44,22 @@ comments: false
           <input type="radio" id="br" name="zahlung" value="beim-treffen">
           <label for="br" style="font-size: 13pt">Beim Treffen unterschreiben</label>
         </div>
-        <div class="col-md-6">
+        <div class="form-group col-md-6">
         <input class="form-control" type="text" name="Vorname" placeholder="Vorname*" required>
         <input class="form-control" type="text" name="Nachname" placeholder="Nachname*" required>
       </div>
-      <div class="col-md-6">
+      <div class="form-group col-md-6">
       <input class="form-control" type="email" name="email" placeholder="E-Mail Addresse*" required>
       <input class="form-control" type="text" name="Handynummer" placeholder="Handynummer*" required>
       </div>
-      <div class="col-md-6">
+      <div class="form-group col-md-12">
       <span style="font-size: 17px">Immatrikuliert seit:</span>
       <input class="form-control" type="text" name="Immatrikulation" placeholder="MM/JJJJ*" required>
       </div>
+      </div>
+      <div class="checkbox-same-line">
+      <input type="checkbox" id="pp" name="Datenschutzbedingungen" value="DSGVO" required>
+      <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
       </div>
       <center><input class="btn btn-dark" type="submit" value="Senden"></center>
       <input type="hidden" name="_next" value="https://winitiative-augsburg.de/danke">
