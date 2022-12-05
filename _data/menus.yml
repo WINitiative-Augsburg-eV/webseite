@@ -1,14 +1,14 @@
 # Top Menu
 topmenu:
 
-- title: Startseite
-  url: ""
-
 - title: Über Uns
   url: "ueber-uns/"
 
 - title: Mitglied werden
   url: "mitglied-werden/"
+
+- title: Interessante Angebote
+  url: "angebote/"
 
 - title: Kontakt
   url: "kontakt/"
