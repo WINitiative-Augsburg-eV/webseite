@@ -60,9 +60,9 @@
   -webkit-animation-iteration-count: calc(var(--animate-repeat) * 3);
   animation-iteration-count: calc(var(--animate-repeat) * 3);
 }
-.animate__animated.animate__delay-0.3s {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+.animate__animated.animate__delay-0.5s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   -webkit-animation-delay: var(--animate-delay);
   animation-delay: var(--animate-delay);
 }
