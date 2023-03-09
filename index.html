@@ -8,25 +8,26 @@ background: '/img/bg-index.jpg'
 ================================================== -->
 {% if page.url == "/" %}
 
-<div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
-      <h1 class="font-weight-bold mb-4 animate__animated animate__slideInUp" style="color: #037c94"><center>Willkommen auf der Website der WINitiative Augsburg</center></h1>
-      <div class="animate__animated animate__slideInUp animate__delay-0.5s	">
-      <p class="lead mb-4" style="color: white"">Für den aktiven Austausch veranstaltet die WINitiative diverse Events wie Stammtische, Exkursionen, Lerngruppen und mehr. Dabei tritt man in einem lockeren und entspannten Rahmen miteinander in Kontakt.</p>
-      <p class="lead mb-4" style="color: white"">Als Mitglied der WINitiative kannst du dich bei der Planung und Organisation unserer Events engagieren. Dabei kommst du mit WIN-Studierenden aus verschiedenen Semestern in Kontakt und kannst ganz nebenbei etwas für deinen Lebenslauf tun.</p>
-      <p class="lead mb-4" style="color: white"">Wenn du Wirtschaftsinformatik in Augsburg studierst, gibt es also keinen Grund, der WINitiative nicht beizutreten!</p>
-      <div class="row">
-        <div style="margin-top: 30px;" class="col-12 col-md-6 col-lg-6">
-      <center><a href="{{site.baseurl}}/mitglied-werden" class="btn btn-info text-white px-5 btn-lg" style="color: #037c94">Mitglied werden &#x1F4C4</a></center>
-        </div>
-      <div  style="margin-top: 30px;" class="col-12 col-md-6 col-lg-6">
-        <center><a href="{{site.baseurl}}/stammtisch-anmeldung" class="btn btn-info text-white px-5 btn-lg" style="color: #037c94">zum Stammtisch &#x1F37B</a></center>
-      </div>
-      </div>
-    </div>
-    </div>
-    </div>
+<div class="welcome">
+<div class="grid">
+  <div class="main-page-card">
+    <div class="content">
+    <h5>We Want YOU</h5>
+    <p>Wir veranstalten verschiedene Events wie Stammtische, Exkursionen und Lerngruppen. Als Mitglied kannst du bei der Planung und Organisation mitwirken und wertvolle Kontakte zu WINern aus verschiedenen Semestern knüpfen. Du brauchst noch mehr Gründe? <a style="color: #037c94;" href="/ueber-uns">Dann schau hier mal vorbei!</a></p>
+    <center><a href="{{site.baseurl}}/mitglied-werden" class="btn btn-info text-white px-5 btn-lg" style="color: #037c94">Mitglied werden &#x1F4C4</a></center>
   </div>
+  </div>
+  <div class="main-page-card">
+    <div class="content">
+    <h5>Melde dich zum nächsten Stammtisch an</h5>
+    <p>Der WIN Stammtisch bietet Wirtschaftsinformatik Studierenden eine entspannte Atmosphäre, um sich auszutauschen, Kontakte zu knüpfen und Karrieremöglichkeiten zu teilen. Es ist eine großartige Gelegenheit, von anderen Studierenden zu lernen und ihr Fachwissen und Erfahrungen zu nutzen. </p>
+    <center><a href="{{site.baseurl}}/stammtisch-anmeldung" class="btn btn-info text-white px-5 btn-lg" style="color: #037c94">zum Stammtisch &#x1F37B</a></center>
+  </div>
+</div>
+</div>
+</div>
+
+
 
 {% endif %}
 
