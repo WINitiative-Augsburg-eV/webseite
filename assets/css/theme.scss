@@ -1482,3 +1482,93 @@ html {
   }
 }
 }
+
+//Kaminabend
+
+.speaker-heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .speaker-pres{
+    .speaker-heading {
+      text-align: center;
+    }
+
+    .row {
+      box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+      border-radius: 0.25em;
+      margin-bottom: 50px;
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+    .speaker-3-img {
+     
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 250px;
+    }
+    .speaker-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 250px;
+    }
+    .kamin-name {
+      margin-top: 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+    .kamin-titel {
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+    }
+    .kamin-text {
+      text-align: center;
+      margin-bottom: 50px;    }
+    .speaker-3{
+    }
+    }
+}
+@media (min-width: 1200px) {
+.speaker-pres{
+  
+  .row {
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    border-radius: 0.25em;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+.speaker-img {
+  max-width: 250px;
+  margin-left: 40px;
+  margin-top: 25px;
+ 
+}
+.speaker-3-img {
+  margin-bottom: 30px;
+}
+.kamin-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+.kamin-titel {
+  font-size: 1em;
+  font-weight: bold;
+}
+.kamin-text {
+  font-size: 13pt;
+  text-align: left;
+}
+.speaker-3{
+  margin-top: 90px;
+}
+}
+}
