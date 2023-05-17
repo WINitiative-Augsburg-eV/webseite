@@ -1538,7 +1538,10 @@ html {
 }
 @media (min-width: 1200px) {
 .speaker-pres{
-  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
   .row {
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
     border-radius: 0.25em;
