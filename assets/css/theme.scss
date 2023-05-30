@@ -889,6 +889,9 @@ span.navigation:before {
 }
 
 #angebote {
+  .card{
+    margin-bottom: 45px;
+  }
   .cardy__content {
     box-shadow: 0 -0.7em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
     background: rgb(255, 255, 255);
