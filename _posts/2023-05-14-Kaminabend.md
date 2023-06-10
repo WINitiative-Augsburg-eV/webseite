@@ -3,9 +3,6 @@ layout: post
 title: "WINitiative Kaminabend 2023"
 categories: [ Events, Uni ]
 image: assets/images/Kaminabend.jpg
-link: /kaminabend-anmeldung/
-link-text: Zur Anmeldung &#128293
-featured: true
+featured: false
 ---
-Die Winitiative möchte euch ganz herzlich zu zum Kaminabend einladen!  
-Auf euch warten drei Speaker aus unterschiedlichsten Branchen, die ihre persönlichen Erfahrungen und exklusive Einblicke in den Berufsalltag präsentieren. 
+Am 31.05 fand unser erster Kaminabend in Präsens statt. Es gab viele spannende Vorträge zu hören.
