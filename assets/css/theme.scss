@@ -1582,3 +1582,50 @@ html {
 }
 }
 }
+
+//O-Phase CSS
+.o-phase {
+  .grid-container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: none;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .checkbox-design {
+    margin-top: 1.5em;
+  }
+  .checkbox-design [type="checkbox"]:checked + .checkbox-content{
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(3, 124, 148, 0.2);
+    border: 3px solid #80d6e8;
+    animation: press 0.3s 1 linear;
+  }
+  
+  .checkbox-content{
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    border-radius: 0.25em;
+    padding: 5px 20px;
+    
+  }
+  input[type="checkbox"] {
+    display: none;
+}
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+margin-bottom: 2em;
+}
+/* styles.css */
+#requiredCheckboxContainer {
+    display: none;
+}

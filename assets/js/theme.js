@@ -37,3 +37,27 @@
 $(document.links).filter(function() {
 return this.hostname != window.location.hostname;
 }).attr('target', '_blank');
+
+
+// brauereiführung
+document.addEventListener("DOMContentLoaded", function () {
+  // Get checkbox elements
+  const specificCheckbox = document.getElementById("specificCheckbox");
+  const requiredCheckbox = document.getElementById("requiredCheckbox");
+  const requiredCheckboxContainer = document.getElementById("requiredCheckboxContainer");
+  const myForm = document.getElementById("myForm");
+
+  // Add an event listener to the specificCheckbox
+  specificCheckbox.addEventListener("change", function () {
+      if (specificCheckbox.checked) {
+          requiredCheckboxContainer.style.display = "block";
+          requiredCheckbox.setAttribute("required", "required");
+      } else {
+          requiredCheckboxContainer.style.display = "none";
+          requiredCheckbox.removeAttribute("required");
+          requiredCheckbox.checked = false; // Uncheck the required checkbox
+      }
+  });
+
+  
+});
