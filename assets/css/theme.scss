@@ -1584,6 +1584,31 @@ html {
 }
 
 //O-Phase CSS
+
+.anmeldehinweis {
+  text-align: center;
+  font-size: 20pt;
+  color: #80d6e8;
+  margin-top: 0.5em;
+
+  @keyframes presss {
+    0% {
+      transform: scale(1);
+    }
+    5% {
+      transform: scale(0.92);
+    }
+    10% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+     animation: presss 5s linear infinite;
+}
+
 .o-phase {
   .grid-container {
     display: grid;
@@ -1594,9 +1619,7 @@ html {
     text-align: center;
     margin-top: 3px;
   }
-  .checkbox-design {
-    margin-top: 1.5em;
-  }
+ 
   .checkbox-design [type="checkbox"]:checked + .checkbox-content{
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(3, 124, 148, 0.2);
     border: 3px solid #80d6e8;
@@ -1607,7 +1630,7 @@ html {
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
     border-radius: 0.25em;
     padding: 5px 20px;
-    
+    margin-bottom: 2rem;
   }
   input[type="checkbox"] {
     display: none;
@@ -1623,7 +1646,7 @@ html {
     transform: scale(1);
   }
 }
-margin-bottom: 2em;
+
 }
 /* styles.css */
 #requiredCheckboxContainer {
