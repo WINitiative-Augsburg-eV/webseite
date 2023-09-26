@@ -22,7 +22,7 @@ comments: false
   <div class="o-phase">
 
  <label for="vehicle1" class="checkbox-design">  
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <input type="checkbox" id="vehicle1" name="opening" value="teilnehmen">
       <div class="checkbox-content">
         <h2>Semesteropening</h2>
         <div class="container" style="text-align: center; font-weight: bold; color: #037c94; font-size: 20pt; padding-bottom: 10px;">
@@ -33,11 +33,17 @@ comments: false
         </div>
         </div>
         <p>Beim Semester Opening bieten wir dir die Gelegenheit, nach dem offiziellen Programm des Lehrstuhls gemeinsam mit anderen Studierenden am Ersti-Stammtisch teilzunehmen. Dabei kannst du in Entspannter Atmosphäre deine Komolitonen besser kennenlernen.</p>
+        <div class="teilnahme">
+          <b><span><i class="fa-solid fa-xmark"></i> NICHT ANMELDEN</span></b>
+        </div>
+        <div class="xteilnahme">
+          <b><span><i class="fa-solid fa-check"></i> ANMELDEN</span></b>
+        </div>
       </div>
   </label>
 
   <label for="vehicle2"  class="checkbox-design"> 
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <input type="checkbox" id="vehicle2" name="kneipentour" value="teilnehmen">
       <div class="checkbox-content">
         <h2>Kneipentour</h2>
         <div class="container" style="text-align: center; font-weight: bold; color: #037c94; font-size: 20pt; padding-bottom: 10px;">
@@ -48,11 +54,17 @@ comments: false
         </div>
         </div>
         <p>Um während deiner Studienzeit in Augsburg die verschiedenen Bars kennenzulernen, bieten wir dir bei unserer Kneipentour die Gelegenheit, einen ersten Eindruck zu gewinnen und dir einen Überblick zu verschaffen. Gleichzeitig hast du die Möglichkeit, in Kontakt mit Kommilitonen aus verschiedenen Semestern zu treten.</p>
-    </div>
+        <div class="teilnahme">
+          <b><span><i class="fa-solid fa-xmark"></i> NICHT ANMELDEN</span></b>
+        </div>
+        <div class="xteilnahme">
+          <b><span><i class="fa-solid fa-check"></i> ANMELDEN</span></b>
+        </div>
+      </div>
   </label>
   
   <label  for="specificCheckbox" class="checkbox-design"> 
-    <input type="checkbox" id="specificCheckbox" name="vehicle3" value="Boat">
+    <input type="checkbox" id="specificCheckbox" name="brauerei" value="teilnehmen">
     <div class="checkbox-content">
       <h2>Brauereiführung</h2>
       <div class="container" style="text-align: center; font-weight: bold; color: #037c94; font-size: 20pt; padding-bottom: 10px;">
@@ -63,11 +75,17 @@ comments: false
       </div>
       </div>
       <p>Damit du weißt, wie die Herstellung des flüssigen Brotes stattfindet, solltest du mit uns an der Riegele Brauereiführung teilnehmen. Die Führung inklusive Essen und Trinken <b>(so viel wie du willst)</b> danach kostet 20€. Im Anschluss hast du die Möglichkeit den Abend mit uns ausklingen zu lassen.</p>
+      <div class="teilnahme">
+        <b><span><i class="fa-solid fa-xmark"></i> NICHT ANMELDEN</span></b>
+      </div>
+      <div class="xteilnahme">
+        <b><span><i class="fa-solid fa-check"></i> ANMELDEN</span></b>
+      </div>
     </div>
   </label>
 
   <label for="vehicle4"  class="checkbox-design"> 
-    <input type="checkbox" id="vehicle4" name="vehicle4" value="Car">
+    <input type="checkbox" id="vehicle4" name="stadtfuehrung" value="teilnehmen">
       <div class="checkbox-content">
         <h2>Stadtführung</h2>
         <div class="container" style="text-align: center; font-weight: bold; color: #037c94; font-size: 20pt; padding-bottom: 10px;">
@@ -78,9 +96,16 @@ comments: false
         </div>
         </div>
         <p>Wenn du neu in Augsburg bist und zusammen mit anderen die Hotspots der Stadt kennenlernen willst, bist du herzlich zu unserer Stadtführung eingeladen. </p>
-    </div>
+        <div class="teilnahme">
+          <b><span><i class="fa-solid fa-xmark"></i> NICHT ANMELDEN</span></b>
+        </div>
+        <div class="xteilnahme">
+          <b><span><i class="fa-solid fa-check"></i> ANMELDEN</span></b>
+        </div>
+      </div>
   </label>
 </div>
+<p style="text-align: center;">Gib jetzt noch schnell deine persönlichen Daten an um die Anmeldung abzuschließen</p>
 <div class="form-row">
   <div class="form-group col-md-6">
   <input class="form-control" type="text" name="vorname" placeholder="Vorname*" required>
@@ -106,7 +131,7 @@ comments: false
   </label>
 </div>
 <br>
-<center><input class="btn btn-dark" type="submit" value="Senden"></center>
+<center><input class="btn btn-dark" type="submit" value="Anmelden"></center>
 <input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
 </form>
 

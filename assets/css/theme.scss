@@ -1624,6 +1624,16 @@ html {
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(3, 124, 148, 0.2);
     border: 3px solid #80d6e8;
     animation: press 0.3s 1 linear;
+    .teilnahme {
+      display: none;
+    }
+    .xteilnahme {
+      display: block;
+      text-align: center;
+      color: #087418;
+      font-size: 16pt;
+      padding-bottom: 1rem;
+    }
   }
   
   .checkbox-content{
@@ -1631,6 +1641,18 @@ html {
     border-radius: 0.25em;
     padding: 5px 20px;
     margin-bottom: 2rem;
+
+    .teilnahme {
+    text-align: center;
+    color: #740808;
+    font-size: 16pt;
+    padding-bottom: 1rem;
+    }
+
+    .xteilnahme {
+    display: none;
+    } 
+
   }
   input[type="checkbox"] {
     display: none;
@@ -1647,8 +1669,11 @@ html {
   }
 }
 
+
+
 }
 /* styles.css */
 #requiredCheckboxContainer {
     display: none;
 }
+
