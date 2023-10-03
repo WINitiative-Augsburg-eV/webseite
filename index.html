@@ -4,6 +4,22 @@ layout: default
 background: '/img/bg-index.jpg'
 ---
 
+<!-- Featured
+================================================== -->
+
+<section>
+  {% for post in site.posts %}
+      {% if post.featured == true %}
+          <div class="wow animate__animated animate__fadeInUp">
+          {% include postbox.html %}
+          </div>
+          <br>
+          <br>
+      {% endif %}
+  {% endfor %}
+
+</section>
+
 <!-- Home Intro
 ================================================== -->
 {% if page.url == "/" %}
@@ -32,21 +48,6 @@ background: '/img/bg-index.jpg'
 {% endif %}
 
 
-<!-- Featured
-================================================== -->
-
-<section>
-  {% for post in site.posts %}
-      {% if post.featured == true %}
-          <div class="wow animate__animated animate__fadeInUp">
-          {% include postbox.html %}
-          </div>
-          <br>
-          <br>
-      {% endif %}
-  {% endfor %}
-
-</section>
 
 <section>
 <div class="cardshead">
