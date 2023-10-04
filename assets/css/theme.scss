@@ -1635,6 +1635,18 @@ html {
       padding-bottom: 1rem;
     }
   }
+
+  .checkbox-design [type="checkbox"]:disabled + .checkbox-content{
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    
+    .teilnahme {
+      display: block;
+    }
+    .xteilnahme {
+      display: none;
+    }
+  }
   
   .checkbox-content{
     box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
