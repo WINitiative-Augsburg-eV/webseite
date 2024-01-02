@@ -38,7 +38,7 @@ $(document.links).filter(function() {
 return this.hostname != window.location.hostname;
 }).attr('target', '_blank');
 
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   // Get checkbox elements
   const specificCheckbox = document.getElementById("specificCheckbox");
@@ -57,5 +57,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
-
+*/
 
