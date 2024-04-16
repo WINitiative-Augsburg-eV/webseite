@@ -91,3 +91,18 @@ Just customize your theme here.
 }
 
 
+.spinner {
+	border: 2px solid transparent; /* Change border color to transparent */
+	border-left-color: #fff; /* Change left border color to match button's background color */
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	animation: spin 1s linear infinite;
+	display: none;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  

@@ -8,7 +8,7 @@ comments: false
 <p class="lead mb-4">Entdecke deine Karrieremöglichkeiten nach dem Studium beim Kaminabend der Winitiative in Zusammenarbeit mit dem FIM. Am 24.04.24 um 19:00 Uhr erwarten dich faszinierende Vorträge von drei inspirierenden Speakern aus verschiedenen Bereichen, die ihre persönlichen Erfahrungen und Einblicke in den Berufsalltag teilen werden. Die gemütliche Atmosphäre des Veranstaltungsortes BCM lädt zum Networking ein und für Erfrischungen ist gesorgt, damit du dich voll und ganz auf die Inhalte konzentrieren kannst. Lass dich von den Erfolgsgeschichten der Speaker inspirieren und erfahre, welche beruflichen Möglichkeiten sich dir bieten könnten. Wir freuen uns auf dich! 
 </p>
 
-<form action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
+<form id="myForm" action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
     <input type="hidden" name="_subject" value="Neue Anmeldung zum Kaminabend!">
       <input type="hidden" name="_captcha" value="false">
   <br>
@@ -37,7 +37,13 @@ comments: false
   <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
   </div>
   <br>
-  <center><input class="btn btn-dark" type="submit" value="Senden"></center>
+ <center>
+    <button id="submitButton" class="btn btn-dark position-relative" type="submit">
+      Senden
+      <span id="spinner" class="spinner"></span>
+    </button>
+  </center>
+
   <input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
   </form>
    

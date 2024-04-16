@@ -61,7 +61,12 @@ comments: false
       <input type="checkbox" id="pp" name="Datenschutzbedingungen" value="DSGVO" required>
       <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
       </div>
-      <center><input class="btn btn-dark" type="submit" value="Senden"></center>
+      <center>
+        <button id="submitButton" class="btn btn-dark position-relative" type="submit">
+          Senden
+          <span id="spinner" class="spinner"></span>
+        </button>
+      </center>
       <input type="hidden" name="_next" value="https://winitiative-augsburg.de/danke">
       </form>
     </div>

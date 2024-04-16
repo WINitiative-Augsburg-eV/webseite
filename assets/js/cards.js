@@ -30,3 +30,11 @@ $cards.forEach(($card, index0) => {
 		}
 	);
 });
+
+document.getElementById('myForm').addEventListener('submit', function() {
+	// Show spinner
+	document.getElementById('spinner').style.display = 'inline-block';
+	// Disable submit button to prevent multiple submissions
+	document.getElementById('submitButton').disabled = true;
+  });
+  
