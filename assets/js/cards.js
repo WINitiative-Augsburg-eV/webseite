@@ -37,4 +37,33 @@ document.getElementById('myForm').addEventListener('submit', function() {
 	// Disable submit button to prevent multiple submissions
 	document.getElementById('submitButton').disabled = true;
   });
+
+
+  //Datum / auf Anmeldung
+  document.getElementById('date').addEventListener('keydown', function (e) {
+	var target = e.target, position = target.selectionEnd, length = target.value.length;
+	
+	if (e.key === 'Backspace' && length === 3 && position === 3) {
+	  target.value = target.value.slice(0, -1);
+	}
+  });
+  
+  document.getElementById('date').addEventListener('input', function (e) {
+	var target = e.target, position = target.selectionEnd, length = target.value.length;
+	
+	if (length === 2 && position === 2 && target.value.indexOf('/') === -1) {
+	  target.value += '/';
+	} else if (length < 3 && target.value.indexOf('/') !== -1) {
+	  target.value = target.value.replace('/', '');
+	} else if (length > 2 && target.value.lastIndexOf('/') !== 2) {
+	  target.value = target.value.substring(0, 2) + '/' + target.value.substring(3).replace('/', '');
+	} else if (length > 7) {
+	  target.value = target.value.substring(0, 7);
+	}
+  });
+  
+  
+  
+  
+  
   
