@@ -5,7 +5,7 @@ timezone: UTC+2
 baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/4ad55223-b284-4398-8205-c4bac155f6f9.jpg'
+favicon: 'assets/images/favicon.ico'
 author: Sal
 
 paginate: 20
