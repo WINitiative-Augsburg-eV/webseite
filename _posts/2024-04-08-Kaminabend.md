@@ -8,4 +8,4 @@ link-text: Zur Anmeldung 🤝
 featured: true
 ---
 Auch in diesem Semester veranstalten wir wieder einen Kaminabend in Kooperation mit dem FIM 🚀 \
-Auf Euch warten spannende Speaker zu Themen wie Start-Ups und Data Science 🔥
+Auf Euch warten spannende Speaker zu Themen wie Start-Ups, Machine Learning und Software Development 🔥
