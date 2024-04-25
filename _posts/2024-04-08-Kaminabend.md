@@ -3,9 +3,7 @@ layout: post
 title: "WINitiative Kaminabend SoSe 2024"
 categories: [ Events, Uni ]
 image: assets/images/Kaminabend_SS24.jpg
-link: kaminabend-anmeldung/
-link-text: Zur Anmeldung 🤝
-featured: true
+
 ---
-Auch in diesem Semester veranstalten wir wieder einen Kaminabend in Kooperation mit dem FIM 🚀 \
-Auf Euch warten spannende Speaker zu Themen wie Start-Ups, Machine Learning und Software Development 🔥
+Auch in diesem Semester veranstalteten wir wieder einen Kaminabend in Kooperation mit dem FIM 🚀 \
+Themen der Vorträge waren Start-Ups, Machine Learning und Software Development 🔥
