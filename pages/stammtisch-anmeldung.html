@@ -5,7 +5,7 @@ permalink: "/win-treffen/"
 comments: false
 ---
 
-<form action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
+<form id="myForm" action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
   <input type="hidden" name="_subject" value="Neue Anmeldung zum Stammtisch!">
     <input type="hidden" name="_captcha" value="false">
 <p class="lead mb-4">Im Anschluss an unsere Fachschaftssitungen findet das WIN-Treffen 17:30 im Unikum statt. Wenn du die WINitiative oder andere Wirtschaftsinformatiker kennenlernen willst, bist du herzlich eingeladen.</p>
@@ -31,6 +31,11 @@ comments: false
 <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
 </div>
 <br>
-<center><input class="btn btn-dark" type="submit" value="Senden"></center>
+<center>
+  <button id="submitButton" class="btn btn-dark position-relative" type="submit">
+    Senden
+    <span id="spinner" class="spinner"></span>
+  </button>
+</center>
 <input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
 </form>
