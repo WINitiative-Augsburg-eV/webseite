@@ -1,16 +1,19 @@
 ---
 layout: page
-title: WIN exklusive Vorträge bei Check24 <br> Am 15.01 von 17:00 - 19:00 Uhr
+title: WIN exklusiver Workshop bei den SWA <br> Am 01.07 von 8:30 - 12:00 Uhr
 permalink: "/event-anmeldung/"
 comments: false
 ---
-<p class="lead mb-4"> Sichere dir jetzt deinen Platz bei unserem letzten Event im WS23/24, in Kooperation mit Check24. <br> <br>
-  <!--  <span style="font-weight: bold;">Die Teilnehmerzahl ist äußerst begrenzt, also beeil dich!</span><br> <br>
-  In den vom Geschäftsführer und Teamleiter gehaltenen Vorträgen, vertiefst du dein Wissen zu Themen wie Produktmanagement, Digitalisierung und IT. <br><br>
-  Außerdem erhältst du die unschätzbare Möglichkeit, einzigartige Einblicke hinter die Kulissen von Check24 zu gewinnen und das Unternehmen als potenziellen Arbeitgeber kennenzulernen.<br>
-  Nutze diese einmalige Gelegenheit und melde dich schnell an.-->
-  Die Anmeldung ist leider geschlossen.</p>
-<form action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
+<p class="lead mb-4">
+  Sichere dir jetzt deinen Platz bei unserem letzten Event im SoSe 2024 in Kooperation mit den Stadtwerken Augsburg. <br><br>
+  <span style="font-weight: bold;">Die Teilnehmerzahl ist äußerst begrenzt, also beeil dich!</span><br><br>
+  Thema des Workshops: „Data Culture in den Stadtwerken etablieren“. <br><br>
+  In Gruppen werden wir folgende Themen bearbeiten: Maßnahmen für Change Management zur stärkeren Datennutzung, Strategien für eine neue Organisationsstruktur und datengetriebene Unternehmenssteuerung und Entscheidungsfindung. <br><br>
+  <span style="font-weight: bold;">Nach dem Workshop laden wir alle Teilnehmer zu einem gemeinsamen Mittagessen ein.</span> <br><br>
+  Nutze diese einmalige Gelegenheit und melde dich schnell an.
+</p>
+
+<form  id="myForm" action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
   <input type="hidden" name="_subject" value="Neue Anmeldung zum Workshop!">
     <input type="hidden" name="_captcha" value="false">
 <br>
@@ -36,6 +39,10 @@ comments: false
 <label for="pp" style="font-size: 13pt">Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.</label>
 </div>
 <br>
-<center><input class="btn btn-dark" type="submit" value="Senden" disabled></center>
-<input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
+<center>
+  <button id="submitButton" class="btn btn-dark position-relative" type="submit">
+    Senden
+    <span id="spinner" class="spinner"></span>
+  </button>
+</center><input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
 </form>
