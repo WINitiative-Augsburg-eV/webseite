@@ -1,0 +1,52 @@
+---
+layout: page
+title: Anmeldung zum Buddy-Programm
+permalink: "/buddy-anmeldung/"
+comments: false
+---
+
+<form id="myForm" action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d" method="POST">
+  <input type="hidden" name="_subject" value="Neue Anmeldung zum Buddy-Programm!">
+  <input type="hidden" name="_captcha" value="false">
+
+  <p class="lead mb-4">
+    Wenn du dich für das Buddy-Programm anmeldest, wird dir ein erfahrener Wirtschaftsinformatik-Student zur Seite gestellt. Dieser Buddy unterstützt dich bei allen Fragen rund ums Studium, indem er entweder selbst antwortet oder dich an die richtige Stelle verweist.
+  </p>
+  
+  <p class="lead mb-4">
+    Nach deiner Anmeldung wird dir ein Buddy zugeteilt, der sich zum Semsterstart per WhatsApp mit dir in Verbindung setzen wird.
+  </p>
+  
+  <br>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" name="vorname" placeholder="Vorname*" required>
+      <input class="form-control" type="text" name="nachname" placeholder="Nachname*" required>
+    </div>
+    <div class="form-group col-md-6">
+      <input class="form-control" type="email" name="email" placeholder="E-Mail-Adresse*" required>
+      <input class="form-control" type="text" name="Handynummer" placeholder="Handynummer*" required>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="checkbox-same-line">
+    <input type="checkbox" id="pp" name="Datenschutzbedingungen" value="DSGVO" required>
+    <label for="pp" style="font-size: 13pt">
+      Hiermit stimme ich der <a href="/datenschutzerklaerung" class="text-decoration-none">Datenschutzerklärung</a> der WINitiative zu.
+    </label>
+  </div>
+
+  <br>
+
+  <center>
+    <button id="submitButton" class="btn btn-dark position-relative" type="submit">
+      Senden
+      <span id="spinner" class="spinner"></span>
+    </button>
+  </center>
+
+  <input type="hidden" name="_next" value="https://winitiative-augsburg.de/anmeldung-erfolgreich/">
+</form>
