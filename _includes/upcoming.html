@@ -3,7 +3,8 @@
   <h2 class="font-weight-bold mb-4 section-head">Kommende Events</h2>
   <div class="upcoming-grid">
     {% for event in site.data.events %}
-    {% assign partner = site.data.partners | where: "key", event.partner | first %}
+    {% assign partner = nil %}
+    {% if event.partner %}{% assign partner = site.data.partners | where: "key", event.partner | first %}{% endif %}
     <article class="upcoming-card" {% if event.date %}data-date="{{ event.date | date: '%Y-%m-%d' }}"{% endif %}>
       <p class="upcoming-when">{{ event.when }}</p>
       <h3 class="h4">{{ event.title }}</h3>
