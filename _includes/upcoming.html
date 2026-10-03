@@ -1,0 +1,68 @@
+<!-- Kommende Events (Daten: _data/events.yml) -->
+<section class="upcoming" id="kommende-events">
+  <h2 class="font-weight-bold mb-4 section-head">Kommende Events</h2>
+  <div class="upcoming-grid">
+    {% for event in site.data.events %}
+    {% assign partner = site.data.partners | where: "key", event.partner | first %}
+    <article class="upcoming-card" {% if event.date %}data-date="{{ event.date | date: '%Y-%m-%d' }}"{% endif %}>
+      <p class="upcoming-when">{{ event.when }}</p>
+      <h3 class="h4">{{ event.title }}</h3>
+      {% if event.where %}<p class="upcoming-where"><strong>Wo:</strong> {{ event.where }}</p>{% endif %}
+      <p>{{ event.text }}</p>
+      {% if partner %}<a class="upcoming-partner" href="{{ partner.url }}" target="_blank" rel="noopener"><span>in Kooperation mit</span><img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.name }}"></a>{% endif %}
+      {% if event.link %}<a href="{{ site.baseurl }}{{ event.link }}" class="btn btn-info text-white px-4">{{ event.link-text | default: "Mehr erfahren" }}</a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  <p class="upcoming-empty" hidden>Gerade ist nichts geplant. Tritt unserer WhatsApp-Community bei, dann erfährst du es als Erstes.</p>
+</section>
+<script>
+  (function () {
+    // Vergangene Events ausblenden (Seite wird nur bei Änderungen neu gebaut)
+    var today = new Date().toISOString().slice(0, 10);
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".upcoming-card"));
+    var visible = cards.filter(function (card) {
+      var d = card.getAttribute("data-date");
+      if (d && d < today) { card.hidden = true; return false; }
+      return true;
+    });
+    if (!visible.length) { document.querySelector(".upcoming-empty").hidden = false; return; }
+
+    // Reihenfolge merken (für Stapel-Abstand und gestaffeltes Einblenden)
+    visible.forEach(function (card, i) { card.style.setProperty("--i", i); });
+
+    // Einblenden beim Scrollen
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) { return; }
+          var card = e.target;
+          card.classList.add("is-visible");
+          io.unobserve(card);
+          // danach die Einblend-Klasse entfernen, damit der Stapel-Effekt nicht nachzieht
+          setTimeout(function () { card.classList.remove("reveal"); }, 1000);
+        });
+      }, { threshold: 0.15 });
+      visible.forEach(function (card) { card.classList.add("reveal"); io.observe(card); });
+    }
+
+    // Handy: Karten, über die die nächste geschoben wird, leicht verkleinern
+    var mobile = window.matchMedia("(max-width: 767px)");
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var ticking = false;
+    function stack() {
+      ticking = false;
+      visible.forEach(function (card, i) {
+        var next = visible[i + 1];
+        if (!mobile.matches || reduce.matches || !next || !card.classList.contains("is-visible")) { card.style.transform = ""; return; }
+        var overlap = card.getBoundingClientRect().bottom - next.getBoundingClientRect().top;
+        var p = Math.max(0, Math.min(1, overlap / card.offsetHeight));
+        card.style.transform = p > 0 ? "scale(" + (1 - 0.05 * p) + ")" : "";
+      });
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(stack); }
+    }, { passive: true });
+    window.addEventListener("resize", stack);
+  })();
+</script>

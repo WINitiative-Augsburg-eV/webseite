@@ -1,0 +1,32 @@
+# Kommende Events auf der Startseite.
+# Neues Event = neuen Block kopieren und anpassen. Reihenfolge = Reihenfolge auf der Seite.
+#
+# title:    Name des Events
+# date:     letzter Tag des Events (JJJJ-MM-TT). Danach verschwindet es automatisch.
+#           Weglassen, wenn der Termin noch nicht feststeht.
+# when:     Text, der als Datum angezeigt wird
+# where:    Ort (optional)
+# text:     kurze Beschreibung
+# partner:  Schlüssel aus partners.yml, zeigt das Logo (optional)
+# link / link-text:  Button (optional)
+
+- title: "O-Phase für Erstsemester"
+  date: 2026-10-08
+  when: "Mo, 05.10. – Do, 08.10.2026"
+  where: "Uni Augsburg & Innenstadt"
+  text: "Einführungsveranstaltung, Stadtrallye, Pubquiz, Karaoke und mehr: Lern deine Kommilitonen kennen, bevor das Semester losgeht."
+  link: /o-phase-2026/
+  link-text: "Zum Wochenplan"
+
+- title: "Fachvortrag von makandra"
+  date: 2026-12-01
+  when: "Di, 01.12.2026"
+  where: "Uni Augsburg, Raum und Uhrzeit folgen"
+  text: "makandra gibt Einblick in den Arbeitsalltag als Softwareentwickler in Augsburg."
+  partner: makandra
+
+- title: "Firmenabend bei Mischok"
+  when: "Termin folgt"
+  where: "Mischok GmbH, Karlstraße 12, Augsburg"
+  text: "Mischok stellt sich und seine Arbeit vor und zeigt, wie Junior-Entwickler dort ausgebildet werden. Dazu gibt es eine Cocktailbar."
+  partner: mischok
