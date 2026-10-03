@@ -1,0 +1,13 @@
+<!-- Partner (Daten: _data/partners.yml) -->
+<section class="partners" id="partner">
+  <h2 class="font-weight-bold mb-2 section-head">Unsere Partner</h2>
+  <p class="lead mb-4">Neu an Bord: Wir freuen uns über die Zusammenarbeit mit {% for p in site.data.partners %}{% unless forloop.first %}{% if forloop.last %} und {% else %}, {% endif %}{% endunless %}<strong>{{ p.name }}</strong>{% endfor %}.</p>
+  <div class="partner-grid">
+    {% for p in site.data.partners %}
+    <a class="partner-card" href="{{ p.url }}" target="_blank" rel="noopener">
+      <img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.name }}">
+    </a>
+    {% endfor %}
+  </div>
+  <center><a href="{{ site.baseurl }}/stellenanzeigen/" class="btn btn-info text-white px-5 btn-lg mt-4">Zu den Stellenanzeigen &#x1F4BC;</a></center>
+</section>

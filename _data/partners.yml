@@ -1,0 +1,14 @@
+# Unsere Partner. Erscheinen auf der Startseite, im Footer und auf der Stellenanzeigen-Seite.
+# Logos liegen in assets/images/partner/
+
+- key: mischok
+  name: "Mischok GmbH"
+  logo: assets/images/partner/mischok.png
+  url: https://mischok.de
+  text: "Softwareentwicklung aus Augsburg."
+
+- key: makandra
+  name: "makandra"
+  logo: assets/images/partner/makandra.png
+  url: https://makandra.de
+  text: "Softwareentwicklung aus Augsburg."

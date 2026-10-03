@@ -102,6 +102,13 @@
 ================================================== -->
 <footer class="footer container text-center">
 
+  <div class="footer-partners">
+    <span>Unsere Partner</span>
+    {% for p in site.data.partners %}
+    <a href="{{ p.url }}" target="_blank" rel="noopener"><img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.name }}"></a>
+    {% endfor %}
+  </div>
+
 
   <ul class="p-0 mb-1 small">
     {% for item in site.data.menus.footermenu %}
@@ -111,7 +118,7 @@
     {% endfor %}
     </ul>
     <div class="copyright small">
-       Copyright © 2023 {{site.title}}
+       Copyright © {{ site.time | date: "%Y" }} {{site.title}}
     </div>
 </footer>
 
