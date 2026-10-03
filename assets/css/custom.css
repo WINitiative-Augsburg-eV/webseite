@@ -138,7 +138,7 @@ Just customize your theme here.
 	color: #6c757d;
 	font-size: 0.85rem;
 }
-.upcoming-partner img { height: 22px; width: auto; }
+.upcoming-partner img { height: auto; width: auto; max-height: 36px; max-width: 120px; }
 
 .partner-grid {
 	display: grid;
@@ -171,7 +171,7 @@ Just customize your theme here.
 	border-radius: 0.25em;
 }
 .footer-partners span { color: #6c757d; font-size: 0.85rem; width: 100%; }
-.footer-partners img { height: 28px; width: auto; }
+.footer-partners img { height: auto; width: auto; max-height: 44px; max-width: 150px; }
 
 /* Stellenanzeigen */
 .jobs-partner {
