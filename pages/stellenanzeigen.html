@@ -1,0 +1,33 @@
+---
+layout: page
+title: Stellenanzeigen
+description: "Jobs, Praktika und Werkstudentenstellen bei den Partnern der WINitiative Augsburg."
+permalink: "/stellenanzeigen/"
+comments: false
+---
+
+<center><p class="lead mb-5">Jobs, Praktika und Werkstudentenstellen bei unseren Partnern.</p></center>
+
+{% for p in site.data.partners %}
+{% assign jobs = site.data.jobs | where: "partner", p.key %}
+<section class="jobs-partner" id="{{ p.key }}">
+  <div class="jobs-partner-head">
+    <a href="{{ p.url }}" target="_blank" rel="noopener"><img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.name }}"></a>
+    <a href="{{ p.url }}" target="_blank" rel="noopener" class="btn btn-outline-info">Zur Website</a>
+  </div>
+  {% if jobs.size > 0 %}
+    {% for job in jobs %}
+    <div class="job">
+      <h3 class="h5">{{ job.title }}</h3>
+      <p class="job-meta">{{ job.type }}{% if job.type and job.location %} · {% endif %}{{ job.location }}</p>
+      {% if job.text %}<p>{{ job.text }}</p>{% endif %}
+      {% if job.link %}<a href="{{ job.link }}" target="_blank" rel="noopener" class="btn btn-info text-white px-4">Zur Stellenanzeige</a>{% endif %}
+    </div>
+    {% endfor %}
+  {% else %}
+    <p class="jobs-empty">Stellenanzeigen von {{ p.name }} folgen in Kürze.</p>
+  {% endif %}
+</section>
+{% endfor %}
+
+<center><p class="mt-5">Dein Unternehmen möchte hier Stellen ausschreiben? <a style="color: #037c94;" href="{{ site.baseurl }}/kontakt/">Schreib uns!</a></p></center>

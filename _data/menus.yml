@@ -7,8 +7,8 @@ topmenu:
 - title: Mitglied werden
   url: "mitglied-werden/"
 
-- title: Interessante Angebote
-  url: "angebote/"
+- title: Stellenanzeigen
+  url: "stellenanzeigen/"
 
 - title: Kontakt
   url: "kontakt/"

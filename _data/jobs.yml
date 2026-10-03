@@ -1,0 +1,12 @@
+# Stellenanzeigen der Partner. Solange ein Partner hier keine Anzeige hat,
+# zeigt die Seite automatisch "Stellenanzeigen folgen in Kürze".
+#
+# Beispiel (die # am Zeilenanfang entfernen):
+#
+# - partner: mischok
+#   title: "Werkstudent Softwareentwicklung (m/w/d)"
+#   type: "Werkstudent"
+#   location: "Augsburg"
+#   text: "Kurze Beschreibung der Stelle."
+#   link: https://mischok.de/...
+[]
