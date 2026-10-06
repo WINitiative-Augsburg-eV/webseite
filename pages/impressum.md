@@ -7,16 +7,16 @@ comments: false
 
 
 Winitiative e.V.  
-Gustav-Heinemann-Straße 9 1/4
-86199 Augsburg   
-leonhard.weng@winitiative-augsburg.de
+Salomon-Idler-Str. 4  
+86159 Augsburg  
+vorstand@winitiative-augsburg.de
 
 Registereintrag: Eingetragen im Vereinsregister  
 Registergericht: Amtsgericht Augsburg  
 Registernummer: 201972  
 
 Vertreten durch:  
-Leonhard Weng (1. Vorstand)
+Lena Huber (1. Vorstand)
 
 
 
