@@ -18,15 +18,16 @@
   link: /o-phase-2026/
   link-text: "Zum Wochenplan"
 
+- title: "Firmenabend bei Mischok"
+  date: 2026-11-05
+  when: "Do, 05.11.2026, ab 17:00 Uhr"
+  where: "Mischok GmbH, Karlstraße 12, Augsburg"
+  text: "Mischok stellt sich und seine Arbeit vor und zeigt, wie Junior-Entwickler dort ausgebildet werden. Ablauf: 17:00 Ankommen, 17:30 Vortrag, 18:30 Pizza, Drinks und Networking."
+  partner: mischok
+
 - title: "Fachvortrag von makandra"
   date: 2026-12-01
   when: "Di, 01.12.2026, 18:00 Uhr"
   where: "Uni Augsburg, Raum folgt"
   text: "makandra gibt Einblick in den Arbeitsalltag als Softwareentwickler in Augsburg."
   partner: makandra
-
-- title: "Firmenabend bei Mischok"
-  when: "Termin folgt"
-  where: "Mischok GmbH, Karlstraße 12, Augsburg"
-  text: "Mischok stellt sich und seine Arbeit vor und zeigt, wie Junior-Entwickler dort ausgebildet werden. Dazu gibt es eine Cocktailbar."
-  partner: mischok
