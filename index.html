@@ -37,20 +37,19 @@ background: '/img/bg-index.jpg'
 <h2 id="cards-head" class="font-weight-bold mb-4">Unsere letzten Events</h2>
 </div>
   <ul id="cards">
-    {% for post in paginator.posts %}
+    {% assign recent_count = 0 %}
+    {% for post in site.posts %}
     {% unless post.featured == true %}
           {% include postbox.html %}
+          {% assign recent_count = recent_count | plus: 1 %}
+          {% if recent_count == 3 %}{% break %}{% endif %}
   {% endunless %}
   {% endfor %}
 </ul>
-</section>
-
-<!-- Pagination -->
-<div class="bottompagination">
-  <span class="navigation" role="navigation">
-      {% include pagination.html %}
-  </span>
+<div class="text-center mb-5">
+  <a href="{{ '/events/' | relative_url }}" class="btn btn-info text-white">Alle vergangenen Events ansehen</a>
 </div>
+</section>
 
 <!-- Home Intro
 ================================================== -->

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Vergangene Events
+permalink: /events/
+---
+
+<section>
+  <h1 class="font-weight-bold mb-3">Unsere vergangenen Events</h1>
+  <p class="mb-4">Entdecke unsere bisherigen Veranstaltungen – von Firmenbesuchen bis zu gemeinsamen Abenden auf dem Campus.</p>
+  <ul id="cards">
+    {% for post in site.posts %}
+      {% unless post.featured == true %}
+        {% include postbox.html %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+  <div class="text-center mb-5">
+    <a href="{{ '/' | relative_url }}" class="btn btn-info text-white">Zurück zur Startseite</a>
+  </div>
+</section>
