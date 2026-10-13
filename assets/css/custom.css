@@ -254,3 +254,102 @@ Just customize your theme here.
 @media (prefers-reduced-motion: reduce) {
 	.upcoming-card.reveal { opacity: 1; transform: none; }
 }
+
+/* ===== Event-Karten: Fußbereich mit Button ===== */
+.upcoming-foot {
+	margin-top: auto;
+	padding-top: 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+.upcoming-foot .btn,
+.upcoming-foot .upcoming-partner { margin-top: 0; }
+.upcoming-host { margin: 0; color: #6c757d; font-size: 0.85rem; }
+
+/* ===== Event-Unterseite ===== */
+.event-page { margin-bottom: 3rem; }
+.event-back { margin: 0.5rem 0 1.25rem; }
+.event-back a { color: #037c94; font-weight: 700; }
+.event-box {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+	background: #fff;
+	border-radius: 0.25em;
+	overflow: hidden;
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.06);
+}
+.event-media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 280px;
+	background: #f6f6f6;
+}
+.event-media .event-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+.event-media--logo { background: #fff; padding: 2rem; border-right: 1px solid #eaeaea; }
+.event-media .event-logo { max-width: 80%; max-height: 120px; width: auto; height: auto; }
+.event-media--text { background: #80d6e8; padding: 2rem; text-align: center; }
+.event-media--text span { color: #037c94; font-size: 1.75rem; font-weight: 700; line-height: 1.2; }
+.event-info { padding: 2rem 2.25rem; }
+.event-when { color: #037c94; font-weight: 700; margin-bottom: 0.25rem; }
+.event-info h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 1rem; overflow-wrap: break-word; }
+.event-facts { list-style: none; padding: 0; margin: 0 0 1.25rem; }
+.event-facts li { margin-bottom: 0.25rem; }
+.event-facts a, .event-description a { color: #037c94; }
+.event-subhead { font-size: 1.15rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+.event-schedule { list-style: none; padding: 0; margin: 0; }
+.event-schedule li { padding: 0.4rem 0; border-bottom: 1px solid #eaeaea; }
+.event-time { display: inline-block; min-width: 4rem; color: #037c94; font-weight: 700; }
+.event-register { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid #eaeaea; }
+.event-register-info { color: #6c757d; margin: 0 0 0.75rem; }
+.event-register .btn + .event-register-info { margin: 0.75rem 0 0; }
+
+@media (max-width: 767px) {
+	.event-box { grid-template-columns: 1fr; }
+	.event-media { min-height: 150px; }
+	.event-media--logo, .event-media--text { padding: 1.25rem; border-right: 0; }
+	.event-info { padding: 1.5rem 1.25rem; }
+	.event-info h1 { font-size: 1.6rem; }
+	.event-register .btn { width: 100%; }
+}
+
+/* ===== Animation der Event-Karten ===== */
+.upcoming-card.reveal { opacity: 0; transform: translateY(40px) scale(0.96); }
+.upcoming-card.reveal.is-visible {
+	opacity: 1;
+	transform: none;
+	transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	transition-delay: calc(var(--i, 0) * 120ms);
+}
+@media (hover: hover) and (min-width: 768px) {
+	.upcoming-card:not(.reveal) { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+	.upcoming-card:not(.reveal):hover {
+		transform: translateY(-6px);
+		box-shadow: 0 0.4em 1.4em rgba(0, 0, 0, 0.14), 0 1.4em 2.6em rgba(0, 0, 0, 0.1);
+	}
+}
+@keyframes event-rise {
+	from { opacity: 0; transform: translateY(24px); }
+	to { opacity: 1; transform: none; }
+}
+.event-box { animation: event-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* Veranstalter-Logo in der Karte, Anmeldeschluss */
+.upcoming-host { display: flex; align-items: center; gap: 10px; }
+.upcoming-host img { max-height: 34px; max-width: 90px; width: auto; height: auto; }
+.event-deadline { margin: 0 0 0.75rem; }
+.event-deadline strong { color: #037c94; }
+
+/* Handy: Button und Fußzeile der Karte mittig */
+@media (max-width: 767px) {
+	.upcoming-foot { align-items: center; }
+	.upcoming-card.reveal.is-visible { transition-delay: 0ms; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.upcoming-card.reveal { opacity: 1; transform: none; }
+	.upcoming-card.reveal.is-visible { transition: none; }
+	.event-box { animation: none; }
+}

@@ -39,3 +39,16 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-archives
+
+# Einzelne Events: eine Datei pro Event in _events/, Seite unter /event/<dateiname>/
+collections:
+  events:
+    output: true
+    permalink: /event/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"

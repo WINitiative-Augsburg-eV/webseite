@@ -1,0 +1,69 @@
+---
+layout: default
+---
+{% assign partner = nil %}
+{% if page.partner %}{% assign partner = site.data.partners | where: "key", page.partner | first %}{% endif %}
+
+<article class="event-page">
+  <p class="event-back"><a href="{{ site.baseurl }}/#kommende-events">&larr; Alle kommenden Events</a></p>
+
+  <div class="event-box">
+
+    <!-- Bild links: Event-Bild, sonst Partner-Logo, sonst Veranstalter -->
+    {% if page.image %}
+    <div class="event-media">
+      <img class="event-image" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image_alt | default: page.title }}">
+    </div>
+    {% elsif partner %}
+    <div class="event-media event-media--logo">
+      <a href="{{ partner.url }}" target="_blank" rel="noopener"><img class="event-logo" src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.name }}"></a>
+    </div>
+    {% elsif page.host_logo %}
+    <div class="event-media event-media--logo">
+      {% if page.host_url %}<a href="{{ page.host_url }}" target="_blank" rel="noopener">{% endif %}<img class="event-logo" src="{{ site.baseurl }}/{{ page.host_logo }}" alt="{{ page.host }}">{% if page.host_url %}</a>{% endif %}
+    </div>
+    {% else %}
+    <div class="event-media event-media--text">
+      <span>{{ page.host | default: site.title }}</span>
+    </div>
+    {% endif %}
+
+    <!-- Infos rechts -->
+    <div class="event-info">
+      <p class="event-when">{{ page.when }}</p>
+      <h1>{{ page.title }}</h1>
+
+      <ul class="event-facts">
+        <li><strong>Wo:</strong> {{ page.where }}</li>
+        {% if partner %}<li><strong>In Kooperation mit:</strong> <a href="{{ partner.url }}" target="_blank" rel="noopener">{{ partner.name }}</a></li>{% endif %}
+        {% if page.host %}<li><strong>Veranstalter:</strong> {% if page.host_url %}<a href="{{ page.host_url }}" target="_blank" rel="noopener">{{ page.host }}</a>{% else %}{{ page.host }}{% endif %}</li>{% endif %}
+      </ul>
+
+      <div class="event-description">
+        {{ content }}
+      </div>
+
+      {% if page.schedule %}
+      <h2 class="event-subhead">Ablauf</h2>
+      <ul class="event-schedule">
+        {% for item in page.schedule %}
+        <li><span class="event-time">{{ item.time }}</span> {{ item.title }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <!-- Anmeldung -->
+      <div class="event-register">
+        {% if page.register_url %}
+        {% if page.register_deadline %}<p class="event-deadline">Anmeldeschluss: <strong>{{ page.register_deadline }}</strong></p>{% endif %}
+        <a class="btn btn-info text-white btn-lg" href="{{ page.register_url }}" target="_blank" rel="noopener">{{ page.register_text | default: "Jetzt anmelden" }}</a>
+        {% if page.register_info %}<p class="event-register-info">{{ page.register_info }}</p>{% endif %}
+        {% else %}
+        <p class="event-register-info">{{ page.register_info | default: "Infos zur Anmeldung folgen." }}</p>
+        <a class="btn btn-outline-info" href="{{ site.social.facebook }}" target="_blank" rel="noopener">Zur WhatsApp-Infogruppe</a>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</article>
