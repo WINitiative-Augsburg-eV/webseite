@@ -9,4 +9,24 @@
 #   location: "Augsburg"
 #   text: "Kurze Beschreibung der Stelle."
 #   link: https://mischok.de/...
-[]
+
+- partner: makandra
+  title: "Werkstudent Webentwicklung (m/w/d)"
+  type: "Werkstudent · ab sofort"
+  location: "Augsburg, hybrid"
+  text: "Neue Features im Frontend und Backend von Kundenanwendungen umsetzen und automatisierte Tests schreiben. Ein bis zwei Tage pro Woche (außerhalb der Klausurenzeit). Du studierst z. B. Informatik oder Wirtschaftsinformatik und hast schon über Tutorials hinaus Web-Erfahrung gesammelt."
+  link: https://makandra.de/de/werkstudent-webentwicklung-mwd-augsburg-845
+
+- partner: makandra
+  title: "Trainee Full-Stack Webentwicklung (m/w/d)"
+  type: "Berufseinstieg · Traineeprogramm"
+  location: "Augsburg"
+  text: "Begleiteter Einstieg mit Mentoring: In 4 bis 8 Monaten lernst du Ruby on Rails, JavaScript, CSS und testgetriebene Entwicklung und wirst danach als Webentwickler*in übernommen. Für Absolvent*innen (oder kurz davor) aus Informatik, Mathematik, Physik oder BWL mit IT-Schwerpunkt."
+  link: https://makandra.de/de/trainee-webentwicklung-94
+
+- partner: makandra
+  title: "Senior Software Engineer (m/w/d)"
+  type: "Teil- oder Vollzeit (ab 30 Std.)"
+  location: "Augsburg, hybrid"
+  text: "Webanwendungen mit Ruby on Rails und Next.js für Kundenprojekte entwickeln und weniger erfahrene Kolleg*innen unterstützen. Ab 3 Jahren Erfahrung in der Webentwicklung."
+  link: https://makandra.de/de/senior-software-engineer-937
