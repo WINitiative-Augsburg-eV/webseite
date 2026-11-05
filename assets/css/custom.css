@@ -173,6 +173,16 @@ Just customize your theme here.
 .footer-partners span { color: #6c757d; font-size: 0.85rem; width: 100%; }
 .footer-partners img { height: auto; width: auto; max-height: 44px; max-width: 150px; }
 
+/* Kein blauer Unterstrich/Hover-Effekt aus dem Theme auf Buttons und Logos (Bild-Links) */
+.article-post a.btn,
+.article-post a.btn:hover,
+.article-post a:has(> img),
+.article-post a:has(> img):hover {
+	box-shadow: none;
+}
+/* Fokus-Rahmen für Tastatur-Nutzer behalten */
+.article-post a.btn:focus-visible { box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+
 /* Stellenanzeigen */
 .jobs-partner {
 	background: #fff;
